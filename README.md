@@ -9,17 +9,14 @@ The goal is to clean, analyze, and visualize Netflix's growth and user engagemen
 Data cleaning process with the use of Excel to critical ensure good data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel**.
 
 #### 1. **Check for Missing Values**
-   *Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values.
+   -Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values.
    - No missing Values found.
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
    - Revenue, ARPU, members and membership column standardize to numeric values format.
    - Standardise all column title to text.
    - replace column name from CamelCase to snake_case.
-#### 3. **Remove Duplicates**
-   - Select the entire dataset.
-   - Go to the **Data** tab > **Remove Duplicates**.
-   - In the dialog box that appears, check the **Date** column to remove duplicate rows based on the date.
-   - Click **OK** to remove any duplicate rows.
+#### 3. **Remove Duplicates in the primary id column, date**
+   - No duplicate fund in the primary id column.
 
 ---

@@ -9,7 +9,7 @@ The goal is to clean, analyze, and visualize Netflix's growth and user engagemen
 Data cleaning process with the use of Excel to critical ensure good data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel**.
 
 #### 1. **Check for Missing Values**
-   - Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values.
+   *Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values.
    - No missing Values found.
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.

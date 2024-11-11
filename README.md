@@ -9,26 +9,13 @@ The goal is to clean, analyze, and visualize Netflix's growth and user engagemen
 Data cleaning process with the use of Excel to critical ensure good data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel**.
 
 #### 1. **Check for Missing Values**
-   - Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values;
+   - Using Conditional Formatting to Highlight Missing Values and Filtering to Find Missing Values.
    - No missing Values found.
 #### 2. **Standardize Data Types**
-   - **Date Column**:
-     - Select the **Date** column.
-     - Right-click > **Format Cells** > **Date** format.
-     - Choose a consistent date format (e.g., `YYYY-MM-DD`).
-     
-   - **Revenue and ARPU Columns**:
-     - Select the columns for **Global Revenue**, **Regional Revenues (UCAN, EMEA, LATM, APAC)**, and **ARPU**.
-     - Right-click > **Format Cells** > **Currency** or **Accounting** for revenue columns and **Number** for ARPU.
-     - Ensure that the currency columns have appropriate decimal places (e.g., 2 decimal places).
-     
-   - **Membership Columns**:
-     - Select the **Memberships** columns (e.g., **UCAN Members**, **EMEA Members**, etc.).
-     - Right-click > **Format Cells** > **Number** format, and ensure there are no decimals (whole numbers).
-     
-   - **Region Columns (e.g., UCAN, EMEA, LATM, APAC)**:
-     - Ensure that these columns are formatted as **Text** to maintain consistency in the region names.
-
+   - Date column standardise to date format.
+   - Revenue, ARPU, members and membership column standardize to numeric values format.
+   - Standardise all column title to text.
+   - replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates**
    - Select the entire dataset.
    - Go to the **Data** tab > **Remove Duplicates**.

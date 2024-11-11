@@ -5,25 +5,16 @@
 This project analyzes Netflix's subscriber growth and user engagement trends over the years 2019 to 2024. The dataset includes key metrics such as global revenue, regional streaming revenue, subscriber count, and ARPU (Average Revenue Per User) for different regions: UCAN, EMEA, LATM, and APAC.
 
 The goal is to clean, analyze, and visualize Netflix's growth and user engagement to derive actionable insights.
-## Data Cleaning in Excel
+## Data Cleaning in Microsoft Excel
 The data cleaning process is critical for ensuring data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel** for analysis.
 
 ### Step 1: Initial Data Inspection and Preparation
 
 #### 1. **Check for Missing Values**
-   - **Using Conditional Formatting to Highlight Missing Values**:
-     - Select the entire dataset.
-     - Go to the **Home** tab > **Conditional Formatting** > **New Rule**.
-     - Choose **Format only cells that contain** and select **Blanks**.
-     - Choose a fill color (e.g., red) to highlight missing values.
-     - Click **OK** to apply the formatting. This will highlight all blank cells in the dataset.
+   - **Using Conditional Formatting to Highlight Missing Values**
      
-   - **Using Filter to Find Missing Values**:
-     - Select the entire dataset.
-     - Go to the **Data** tab and click on **Filter**.
-     - Click the drop-down arrow on any column header and select **(Blanks)** to filter for missing values in that column.
-     - Review the filtered rows to check for any missing data.
-
+   - **Using Filter to Find Missing Values**
+   - No missing Values found.
 #### 2. **Standardize Data Types**
    - **Date Column**:
      - Select the **Date** column.

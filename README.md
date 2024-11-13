@@ -6,11 +6,17 @@ This project analyzes Netflix's subscriber growth and user engagement trends ove
 Date : Month-Year
 
 Global Revenue: Revenue collected Worldwide.
+
 UACN : United States and Canada
+
 EMEA : Europe, Middle East and Africa
+
 APAC : Asia-Pacific
+
 LATM : Latin America
+
 RPU : revenue per member.
+
 The goal is to clean, analyze, and visualize Netflix's growth and user engagement to derive actionable insights.
 ## Data Cleaning in Excel
 Data cleaning process with the use of Excel to critical ensure good data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel**.

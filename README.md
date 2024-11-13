@@ -1,4 +1,3 @@
-# ayofase.github.io
 # Subscriber Growth and User Engagement Analysis in the Streaming Industry: A Netflix Case Study (2019-2024)
 
 ## Project Overview

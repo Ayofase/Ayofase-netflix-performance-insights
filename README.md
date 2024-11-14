@@ -29,7 +29,7 @@ Data cleaning process with the use of Excel to critical ensure good data quality
    - Using Conditional Formatting to Highlight Missing Values.
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
-   - removing commas from numeric column (eg. global_plus_dvd_revenue and hours_viewed) in the revenue and engagement dataset for consistency
+   - remove commas from numeric column (eg. global_plus_dvd_revenue and hours_viewed) in the revenue and engagement dataset for consistency
    - Standardise all column title to text.
    - replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates in the primary id column, date in revenue data and title in engagement data**

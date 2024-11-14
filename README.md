@@ -5,6 +5,7 @@ This project analyzes Netflix's subscriber growth and user engagement trends ove
 
 ### Data source
 Revenue data: This dataset used for the analysis is gotten from Kaggle, contains detailed information of trends of quarterly revenue from 2019 to 2024.
+
 Engagement data: This dataset was downloaded from https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024, contains detailes information of what people watch of netflix from 
 
 Date : Month-Year

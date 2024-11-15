@@ -37,5 +37,5 @@ Data cleaning process with the use of Excel to critical ensure good data quality
    - No duplicate fund in the primary id column.
 
 #### 4. **Flitering out irrelevant data**
-    - Remove irrelevant data in the release date (any year below 2019) column and  title column in engagement dataset
+- Remove irrelevant data in the release date (any year below 2019) column and  title column in engagement dataset
 ---

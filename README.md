@@ -27,13 +27,15 @@ The goal is to clean, analyze, and visualize Netflix's growth and user engagemen
 Data cleaning process with the use of Excel to critical ensure good data quality and consistency before analysis. Below are the steps used to clean and prepare the dataset in **Microsoft Excel**.
 
 #### 1. **Check for Missing Values**
-   - Using Conditional Formatting to Highlight Missing Values.
+   - Using Conditional Formatting to highlight missing values.
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
-   - remove commas from numeric column (eg. global_plus_dvd_revenue and hours_viewed) in the revenue and engagement dataset for consistency
+   - Remove commas from numeric column (eg. global_plus_dvd_revenue and hours_viewed) in the revenue and engagement dataset for consistency
    - Standardise all column title to text.
-   - replace column name from CamelCase to snake_case.
+   - Replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates in the primary id column, date in revenue data and title in engagement data**
    - No duplicate fund in the primary id column.
 
+#### 4. **Flitering out irrelevant data**
+    - Remove irrelevant data in the release date (any year below 2019) column and  title column in engagement dataset
 ---

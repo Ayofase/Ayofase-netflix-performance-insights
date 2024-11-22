@@ -3,6 +3,8 @@
 ## Project Overview
 This project analyzes Netflix's subscriber growth and user engagement trends over the years 2019 to 2024. The Netflix revenue datasets includes key metrics that provide insight into subscribers growth such as global revenue, regional streaming revenue, subscriber count, and ARPU (Average Revenue Per User) for different regions: UCAN, EMEA, LATM, and APAC while the provides insights into Netflix's user engagement metrics, focusing on viewing hours, title availability, and release dates. All revenue are in US dollars.
 
+
+
 ### Data source
 Revenue data: This dataset used for the analysis is gotten from Kaggle, contains detailed information of trends of quarterly revenue from 2019 to 2024.
 

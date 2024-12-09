@@ -77,7 +77,7 @@ Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement 
 
 **Data Overview and Summary Statistics**
 
-Initial exploration involved examining the structure of both the revenue data and engagement datasets. Summary statistics (mean, median, min, max, quartiles) were calculated for key metrics, including:
+Initial exploration involving examination of the structure of revenue data and engagement data. Summary statistics (mean, median, min, max, quartiles) were calculated for key metrics, including:
 
 Revenue Data: streaming_revenue, members, arpu, streaming_revenue_growth_rate, membership_growth_rate, arpu_growth_rate (by region).
 

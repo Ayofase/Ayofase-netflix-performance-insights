@@ -116,7 +116,7 @@ WHERE release_date IS NULL OR runtime IS NULL OR hours_viewed IS NULL;
 
 
 SELECT COUNT(*)
-FROM netflix_combine_data                                                       -- 1400 release_date null values           
+FROM netflix_combine_data                                                       -- 1400 release_date null/NA values of 9836 initial null count found in excel before TMDb API integration          
 WHERE release_date IS NULL;
 
  SELECT COUNT(*)
@@ -146,7 +146,7 @@ HAVING
  COUNT (*)> 1;
 
 SELECT release_date,
-  COUNT (*)  AS duplicates                                                   -- this duplicates are okay because of quarterly grouping of the release date 
+  COUNT (*)  AS duplicates                                                         -- this duplicates are okay because of quarterly grouping of the release date 
 FROM 
   netflix_combine_data
 GROUP BY release_date
@@ -157,19 +157,21 @@ HAVING
 ALTER TABLE netflix_combine_data
 ADD  runtime_min INT
 
+-- Converting rutime to minute and Handling NULL release_date with default value	
 UPDATE netflix_combine_data
 SET 
 	runtime_min = CAST(DATEDIFF(SECOND, '00:00:00', ISNULL(runtime, '00:00:00')) AS INT)/60,
 	runtime = CAST(ISNULL(runtime, '00:00:00') AS TIME),
-	release_date = CAST(ISNULL(release_date, '1900-01-01') AS DATE)                               -- Handle NULL release_date with default value
-
+	release_date = CAST(ISNULL(release_date, '1900-01-01') AS DATE)  
+	
+-- changing data type from INT to BIGNIT since total_views exceed INT limit
 ALTER TABLE netflix_combine_data
-ALTER COLUMN views BIGINT;                                                                     -- changing data type from INT to BIGNIT since total_views exceed INT limit
-
+ALTER COLUMN views BIGINT;                                                                     -
+-- changing data type from INT to BIGNIT since total_hours_viewed exceed INT limit
 ALTER TABLE netflix_combine_data           
-ALTER COLUMN hours_viewed BIGINT;                                                             -- changing data type from INT to BIGNIT since total_hours_viewed exceed INT limit
+ALTER COLUMN hours_viewed BIGINT;                                                             -
 
---creating a view of release_date grouped quarterly
+--creating a view of release_date grouped quarterly and filtering out any other date aside from 2019 to 2024
 
 CREATE VIEW quarterly_netflix_engagement AS
 SELECT 
@@ -219,13 +221,8 @@ SELECT
 FROM 
     cleaned_netflix_revenue_by_region  
 GROUP BY 
-    ucan_arpu,                                                                                                                    -- 
+    ucan_arpu,                                                                                                                    -- shows closely related values since no raw data to verify the numbers used to derived the arpu
 	emea_arpu,
 	latm_arpu,
 	apac_arpu;
 
-
-SELECT *
-INTO netflix_tv_movies
-FROM netflix_engagement_with_titles
-WHERE release_date >= '2019-01-01'

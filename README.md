@@ -50,10 +50,9 @@ RPU : revenue per member.
 Data cleaning process with the use of Excel, SQL and R to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**
-   - Using Conditional Formatting to highlight missing values.
+   - Using Conditional Formatting in Microsoft Excel to highlight missing values.
    - **TMDb API Integration:**
 Missing Netflix release dates for movies and tv shows were retrieved using the TMDb API (The Movie Database). A custom R function was implemented to perform this integration using the `httr` package for making API requests and the `jsonlite` package for parsing JSON responses from the TMDb API. If no matches were found for a title the corresponding release date field for that title was set to NA. 
-
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
    - Remove commas from numeric column (eg. Streaming_revenue and hours_viewed) in the revenue and engagement dataset for consistency
@@ -61,18 +60,20 @@ Missing Netflix release dates for movies and tv shows were retrieved using the T
    - Replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates in the primary id column, date in revenue data and title in engagement data**
    - No duplicate fund in the primary id column.
-
+#### 5. **Replacing NA
+   - Replace NA in the release_date column in the revenue data which was as a result of unmatched titles from TMDb API integration process.
 #### 4. **Flitering out irrelevant data**
    - Remove irrelevant data in the release date (any year below 2019) column and availability columns in engagement dataset
+
    
 ## Exploratory Data Analysis (EDA)
-Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement data to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards to answer key questions, such as: 
+Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement data with the use of Rstudio to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards that answer key questions, such as: 
    - What are the key trends in Netflix's global streaming revenue and membership growth?
    - How does revenue performance vary across different regions (UCAN, EMEA, LATM, APAC)?
    - What are the global content viewing patterns and engagement trends for movies vs. TV shows?
    - Which content types are driving the most viewership and watch time globally?
-   - How is the average runtime of Netflix content trending, and does it differ between movies and TV shows?
-   - What are the top 10 most viewed movies and TV shows globally (based on hours viewed)?"
+   - Does the runtime of movies and TV shows influence viewer engagement (total hours viewed) on Netflix, and how does this influence vary by content type? 
+   - What are the top 10 most viewed movies and TV shows globally (based on hours viewed)?
 
 **Data Overview and Summary Statistics**
 
@@ -86,6 +87,8 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
 
    - R: [Data analysis]
    - Tableau: [Data Visualisation]
+
+
    
      
 

@@ -7,7 +7,9 @@ This project analyzes Netflix's streaming performance, focusing on revenue trend
   - [Project Goals](#project-goals)
   - [Data source](#data-source)
   - [Tools](#tools)
-  - [Project Goals](#project-goals)
+  - [Data Cleaning](#data-cleaning)
+  - [Exploratory Data Analysis](#exploratory_data_analysis)
+  - [Data Analysis and Visualisation](#data_analysis_and_visualisation)
 
 ### Project Goals:
 
@@ -44,7 +46,7 @@ RPU : revenue per member.
 - R 
 - Tableau
 
-## Data Cleaning/Prepation
+## Data Cleaning
 Data cleaning process with the use of Excel, SQL and R to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**

@@ -22,7 +22,7 @@ Inform Content Strategy: Provide data-driven insights to inform Netflix's conten
 Develop an Interactive Dashboard: Create a user-friendly Tableau Public dashboard that allows stakeholders to explore the data dynamically, uncover key trends and insights, and make data-informed decisions about revenue, user base growth, and content acquisition/creation strategies.
 
 ### Data source
-Revenue data: This dataset used for the analysis is gotten from Kaggle, contains detailed information of quarterly revenue, membership, and ARPU figures, broken down by region (UCAN, EMEA, LATM, APAC).
+Revenue data: This dataset used for the analysis is gotten from Kaggle, contains detailed information of quarterly revenue, membership, and ARPU figures, broken down by region (UCAN, EMEA, LATM, APAC) from 2019 to 2024 first quarter.
 
 Engagement data: This dataset was downloaded from [Netflix](https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024), contains detailes information of aggregated viewership metrics (total views, total hours viewed, and runtime) for individual movies and TV shows. This dataset does not contain regional data, limiting regional analysis to revenue metrics.
 
@@ -86,11 +86,12 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
 ## Data Analysis and Visualisation
 
    - R: [Data analysis](netflix_revenue_engagement_R.R)
-   - Tableau: [Revenue Performance](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/REVENUEARPUANALYSIS2019-2024?publish=yes)
+   - Tableau: [Revenue Performance](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/REVENUEARPUANALYSIS2019-2024?publish=yes) and 
               [Content Engagement](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/CONTENTVIEWERSHIPANDENGAGEMENTTRENDS#3)
 
 ## Results
- 
+Observing the Global Streaming Revenue Performance, Global Memebership and Growth Rate and Global ARPU, netflix global revenue performance was the highest at Q1 2024 wit a 30.8% increase global streaming performance rate where global streamin revenue was about $9.4 Billion. The ARPU growth rate was the hightest at 2021 Q1 with an increase of 4.66% where global ARPU was 10.7
+
 
 
    

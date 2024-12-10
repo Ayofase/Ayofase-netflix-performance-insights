@@ -91,8 +91,9 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
 
 ## Results
 Observing the Global Streaming Revenue Performance, Global Memebership and Growth Rate and Global ARPU, netflix global revenue performance was the highest at Q1 2024 wit a 30.8% increase global streaming performance rate where global streamin revenue was about $9.4 Billion. The ARPU growth rate was the hightest at 2021 Q1 with an increase of 4.66% where global ARPU was 10.7
+      
 
-
+![revenue_performance_chart](https://github.com/user-attachments/assets/0288f626-f184-417b-b3d5-087a4d4c86d4)
 
    
      

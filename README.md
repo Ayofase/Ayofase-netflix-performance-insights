@@ -86,7 +86,8 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
 ## Data Analysis and Visualisation
 
    - R: [Data analysis](netflix_revenue_engagement_R.R)
-   - Tableau: [Data Visualisation](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/REVENUEARPUANALYSIS2019-2024?publish=yes)
+   - Tableau: [Revenue Performance](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/REVENUEARPUANALYSIS2019-2024?publish=yes)
+              [Content Engagement](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/CONTENTVIEWERSHIPANDENGAGEMENTTRENDS#3)
 
 ## Results
  

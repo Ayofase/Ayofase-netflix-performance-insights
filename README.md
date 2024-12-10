@@ -11,6 +11,7 @@ This project analyzes Netflix's streaming performance, focusing on revenue trend
   - [Exploratory Data Analysis](#exploratory_data_analysis)
   - [Data Analysis and Visualisation](#data_analysis_and_visualisation)
   - [Results](#results)
+  - [Recommendation](#recommendation)
 
 ### Project Goals:
 
@@ -46,7 +47,7 @@ Data cleaning process with the use of Excel, SQL and R to critical ensure good d
 #### 1. **Handling Missing Values**
    - Using Conditional Formatting in Microsoft Excel to highlight missing values. 9,836 missing release date data where found for both tv show and movies data with a total row number of 16,163
    - **TMDb API Integration:**
-Missing Netflix release dates for movies and tv shows were retrieved using the TMDb API (The Movie Database). A custom R function was implemented to perform this integration using the `httr` package for making API requests and the `jsonlite` package for parsing JSON responses from the TMDb API. If no matches were found for a title the corresponding release date field for that title was set to NA. 
+Missing release dates for movies and tv shows were retrieved using the TMDb API (The Movie Database). A custom R function was implemented to perform this integration using the `httr` package for making API requests and the `jsonlite` package for parsing JSON responses from the TMDb API. If no matches were found for a title the corresponding release date field for that title was set to NA. 
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
    - Remove commas from numeric column (eg. Streaming_revenue and hours_viewed) in the revenue and engagement dataset for consistency
@@ -61,8 +62,8 @@ Missing Netflix release dates for movies and tv shows were retrieved using the T
 
    
 ## Exploratory Data Analysis (EDA)
-Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement data with the use of R to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards that answer key questions, such as: 
-   - What are the key trends in Netflix's global streaming revenue and membership growth?
+Exploratory data analysis (EDA) conducted on the revenue and engagement data with the use of R to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards that answer key questions, such as: 
+   - What are the key trends in global streaming revenue and membership growth?
    - How does revenue performance vary across different regions (UCAN, EMEA, LATM, APAC)?
    - What are the global content viewing patterns and engagement trends for movies vs. TV shows?
    - Which content types are driving the most viewership and watch time globally?
@@ -85,9 +86,8 @@ Further exploration using Tableau to visualize data for potential insights
               [Content Engagement](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/CONTENTVIEWERSHIPANDENGAGEMENTTRENDS#3)
 
 ## Results
-### Global Revenue, Membership and ARPU Performance
-Netflix demonstrated substantial growth in global streaming revenue and membership between Q1 2019 and Q1 2024.  Global streaming revenue more than doubled, reaching $9.4 billion in Q1 2024, signifying strong financial performance. This impressive revenue growth was fueled by a considerable rise in global membership, which peaked at 270 million subscribers in Q1 2024, a remarkable increase from 149 million in Q1 2019. 
-
+### Global Revenue, Membership and ARPU Performance 
+Substantial growth in global streaming revenue and membership between Q1 2019 and Q1 2024. Global streaming revenue more than doubled, reaching $9.4 billion in Q1 2024, signifying strong financial performance. This impressive revenue growth was accompanied by a considerable rise in global membership, which peaked at 270 million subscribers in Q1 2024, a remarkable increase from 149 million in Q1 2019. 
 While both revenue and membership experienced consistent growth, the pace of expansion varied. Notably, Q1 2024 saw the highest quarterly revenue and membership figures, with a quarterly revenue increase of approximately 31% and a substantial 15% surge in membership. Although the specific data is presented in the image below it suggest that  the growth both revenue and memberships peaked in Q1 2020 with a revenue increase of 33.6% and membership increase of 48.3%, consistent with when the global pandemic and lockdowns started leading to a boost in demand for home entertainment.  Global ARPU reached its highest point ($10.7) in Q1 2021, driven by a 4.66% quarterly increase, indicating effective pricing strategies 
 
 ![revenue_performance_chart](https://github.com/user-attachments/assets/0288f626-f184-417b-b3d5-087a4d4c86d4)

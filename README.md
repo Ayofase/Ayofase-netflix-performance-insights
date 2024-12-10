@@ -60,9 +60,9 @@ Missing Netflix release dates for movies and tv shows were retrieved using the T
    - Replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates in the primary id column, date in revenue data and title in engagement data**
    - No duplicate fund in the primary id column.
-#### 5. **Replacing NA
+#### 4. **Replacing NA**
    - Replace NA in the release_date column in the revenue data which was as a result of unmatched titles from TMDb API integration process.
-#### 4. **Flitering out irrelevant data**
+#### 5. **Flitering out irrelevant data**
    - Remove irrelevant data in the release date (any year below 2019) column and availability columns in engagement dataset
 
    

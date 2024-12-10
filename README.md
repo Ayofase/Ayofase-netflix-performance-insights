@@ -24,7 +24,7 @@ Develop an Interactive Dashboard: Create a user-friendly Tableau Public dashboar
 ### Data source
 Revenue data: This dataset used for the analysis is gotten from Kaggle, contains detailed information of quarterly revenue, membership, and ARPU figures, broken down by region (UCAN, EMEA, LATM, APAC).
 
-Engagement data: This dataset was downloaded from https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024, contains detailes information of aggregated viewership metrics (total views, total hours viewed, and runtime) for individual movies and TV shows. This dataset does not contain regional data, limiting regional analysis to revenue metrics.
+Engagement data: This dataset was downloaded from [Netflix](https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024), contains detailes information of aggregated viewership metrics (total views, total hours viewed, and runtime) for individual movies and TV shows. This dataset does not contain regional data, limiting regional analysis to revenue metrics.
 
 Date : Month-Year
 
@@ -85,8 +85,11 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
 
 ## Data Analysis and Visualisation
 
-   - R: [Data analysis]
-   - Tableau: [Data Visualisation]
+   - R: [Data analysis](netflix_revenue_engagement_R.R)
+   - Tableau: [Data Visualisation](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/REVENUEARPUANALYSIS2019-2024?publish=yes)
+
+## Results
+ 
 
 
    

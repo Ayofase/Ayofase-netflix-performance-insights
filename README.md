@@ -1,7 +1,7 @@
 # Netflix Streaming Performance (2019-2024): A Data-Driven Analysis of Revenue, Membership, and Content Engagement Trends
 
 ## Project Overview
-This project analyzes Netflix's streaming performance, focusing on revenue trend, subscriber growth and content engagment over the years 2019 to 2024. The Netflix revenue datasets includes key metrics that provide insight into subscribers growth such as global streaming revenue, regional streaming revenue, membership growth, and ARPU (Average Revenue Per User) for different regions: UCAN, EMEA, LATM, and APAC while it provides insights into Netflix's streaming performance and engagement metrics, focusing on release dates, views and hours viewed. All revenue are in US dollars.
+This project analyzes Netflix's streaming performance, focusing on revenue trend, membership growth and content engagment over the years 2019 to 2024. The Netflix revenue datasets includes key metrics such as global streaming revenue, regional streaming revenue, membership growth, and ARPU (Average Revenue Per User) for different regions: UCAN, EMEA, LATM, and APAC while it provides insights into Netflix's streaming revenue and content engagement performance.
 
 ## Table Of Content
   - [Project Goals](#project-goals)
@@ -27,19 +27,12 @@ Revenue data: This dataset used for the analysis is gotten from Kaggle, contains
 
 Engagement data: This dataset was downloaded from [Netflix](https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2024), contains detailes information of aggregated viewership metrics (total views, total hours viewed, and runtime) for individual movies and TV shows. This dataset does not contain regional data, limiting regional analysis to revenue metrics.
 
-Date : Month-Year
-
-Global Revenue: Revenue collected Worldwide.
-
 UACN : United States and Canada
-
 EMEA : Europe, Middle East and Africa
-
 APAC : Asia-Pacific
-
 LATM : Latin America
-
-RPU : revenue per member.
+ARPU : Average revenue per member.
+Currency: US Dollars
 
 ### Tools
 - Excel
@@ -68,7 +61,7 @@ Missing Netflix release dates for movies and tv shows were retrieved using the T
 
    
 ## Exploratory Data Analysis (EDA)
-Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement data with the use of Rstudio to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards that answer key questions, such as: 
+Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement data with the use of R to understand the data's structure, identify trends and patterns, and inform the development of the Tableau dashboards that answer key questions, such as: 
    - What are the key trends in Netflix's global streaming revenue and membership growth?
    - How does revenue performance vary across different regions (UCAN, EMEA, LATM, APAC)?
    - What are the global content viewing patterns and engagement trends for movies vs. TV shows?
@@ -81,8 +74,9 @@ Exploratory data analysis (EDA) conducted on the Netflix revenue and engagement 
 Initial exploration involving examination of the structure of revenue data and engagement data. Summary statistics (mean, median, min, max, quartiles) were calculated for key metrics, including:
 
 Revenue Data: streaming_revenue, members, arpu, streaming_revenue_growth_rate, membership_growth_rate, arpu_growth_rate (by region).
-
 Engagement Data: clean_title, hours_viewed, views, runtime_min.
+
+Further exploration using Tableau to visualize data for potential insights
 
 ## Data Analysis and Visualisation
 

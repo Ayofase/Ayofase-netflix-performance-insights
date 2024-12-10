@@ -1,4 +1,4 @@
-# Analysis of Netflix Revenue, Membership, and Content Strategy (2019-2024)
+# Netflix Streaming Performance (2019-2024): A Data-Driven Analysis of Revenue, Membership, and Content Engagement Trends
 
 ## Project Overview
 This project analyzes Netflix's streaming performance, focusing on revenue trend, subscriber growth and content engagment over the years 2019 to 2024. The Netflix revenue datasets includes key metrics that provide insight into subscribers growth such as global streaming revenue, regional streaming revenue, membership growth, and ARPU (Average Revenue Per User) for different regions: UCAN, EMEA, LATM, and APAC while it provides insights into Netflix's streaming performance and engagement metrics, focusing on release dates, views and hours viewed. All revenue are in US dollars.
@@ -13,9 +13,9 @@ This project analyzes Netflix's streaming performance, focusing on revenue trend
 
 ### Project Goals:
 
-Identify Key Revenue Drivers: Explore trends in streaming revenue, ARPU (Average Revenue Per User), and membership growth, both globally and regionally. Note that engagement metrics are not available at the regional level due to data source constraints and hence will be presented globally.
+Identify Key Revenue Drivers: Explore trends in streaming revenue, ARPU (Average Revenue Per User), and membership growth, both globally and regionally. 
 
-Analyze Content Performance: Examine viewer engagement metrics (total views, total hours viewed, average runtime) to understand content consumption patterns and identify top-performing movies and TV shows.
+Analyze Content Performance: Examine viewer engagement metrics (total views, total hours viewed, average runtime) to understand content consumption patterns and identify top-performing movies and TV shows. Note the engagement metric has no regional data.
 
 Inform Content Strategy: Provide data-driven insights to inform Netflix's content acquisition and production decisions, focusing on maximizing viewership and engagement.
 
@@ -106,4 +106,14 @@ While both revenue and membership experienced consistent growth, the pace of exp
  - APAC: APAC was the most interesting region, with big changes. Membership shot up a lot in Q1 2020 (22.2%), but the biggest revenue jump happened later, in Q1 2021 (11.4%). ARPU growth was there, but smaller and peaking at 4.2% in Q1 2021 alongside membership growth.
 ![regional revenue](https://github.com/user-attachments/assets/a2dfaf90-f718-405a-a0ad-49a2fef52adb)
 
-   
+### Content Performance Trend
+
+Content Release and Engagement: Netflix significantly increased content releases in the latter half of 2022, with Q3 and Q4 seeing the highest volume. Q3 2022 had 203 movie releases and 191 TV show releases, while Q4 2022 saw a further increase to 212 movie releases and a consistent 191 TV show releases. This surge in content availability appears to have contributed to a substantial increase in overall viewership, culminating in peak engagement in Q1 2024.
+
+Peak Engagement (Q1 2024): Total views and hours viewed reached their highest levels in Q1 2024. Movies achieved 985 million views and 1.7 billion hours viewed, while TV shows garnered an impressive 1.03 billion views and 6 billion hours viewed. (What specific factors might explain this exceptional performance in Q1 2024? Were there specific popular releases, marketing campaigns, or external factors influencing viewership? Analyzing trends immediately following Q1 2024 will help understand if this surge was sustained.)
+
+Average Views per Title: The average views per title also peaked in Q1 2024, with movies averaging 9.3 million views per title and TV shows averaging a remarkable 7.8 million views per title. Investigating the titles released during this period and their genres can provide valuable insights into content preferences.
+
+Runtime and Engagement: A scatter plot analysis reveals a positive correlation between average runtime and average hours viewed for both movies and TV shows. This suggests that, generally, longer content tends to accumulate more viewing hours. However, it's important to consider this trend in conjunction with the total views and average views per title. While longer runtimes might lead to higher total viewing hours, shorter, more easily consumable content might attract a broader audience and generate higher total views. Further analysis of specific genres and subgenres within movies and TV shows could help refine this understanding.
+
+Top Performing Content: An analysis of the top 10 titles by hours viewed reveals a dominance of TV shows, with 5 of the top 5 spots occupied by series. Notably, "Bridgerton Season 3" leads with an impressive 734 million hours viewed and 91.9 million views, highlighting the popularity and binge-worthy nature of episodic content. Examining the characteristics of these top-performing titles (genre, themes, target audience) can offer valuable insights for Netflix's content strategy.

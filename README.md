@@ -90,12 +90,20 @@ Engagement Data: clean_title, hours_viewed, views, runtime_min.
               [Content Engagement](https://public.tableau.com/app/profile/ayomide.fase2159/viz/Netflixrevenueandengagement/CONTENTVIEWERSHIPANDENGAGEMENTTRENDS#3)
 
 ## Results
-Observing the Global Streaming Revenue Performance, Global Memebership and Growth Rate and Global ARPU, netflix global revenue performance was the highest at Q1 2024 wit a 30.8% increase global streaming performance rate where global streamin revenue was about $9.4 Billion. The ARPU growth rate was the hightest at 2021 Q1 with an increase of 4.66% where global ARPU was 10.7
-      
+### Global Revenue, Membership and ARPU Performance
+Netflix demonstrated substantial growth in global streaming revenue and membership between Q1 2019 and Q1 2024.  Global streaming revenue more than doubled, reaching $9.4 billion in Q1 2024, signifying strong financial performance. This impressive revenue growth was fueled by a considerable rise in global membership, which peaked at 270 million subscribers in Q1 2024, a remarkable increase from 149 million in Q1 2019. 
+
+While both revenue and membership experienced consistent growth, the pace of expansion varied. Notably, Q1 2024 saw the highest quarterly revenue and membership figures, with a quarterly revenue increase of approximately 31% and a substantial 15% surge in membership. Although the specific data is presented in the image below it suggest that  the growth both revenue and memberships peaked in Q1 2020 with a revenue increase of 33.6% and membership increase of 48.3%, consistent with when the global pandemic and lockdowns started leading to a boost in demand for home entertainment.  Global ARPU reached its highest point ($10.7) in Q1 2021, driven by a 4.66% quarterly increase, indicating effective pricing strategies 
 
 ![revenue_performance_chart](https://github.com/user-attachments/assets/0288f626-f184-417b-b3d5-087a4d4c86d4)
 
-   
-     
 
----
+### Regional Revenue, Membership and ARPU Performance
+   
+ - UCAN: UCAN showed solid growth in both revenue and membership. Revenue kept getting stronger, hitting its highest point at 17.5% year-over-year growth in Q1 2024. Membership growth was flunctuating, with the biggest jump (4.6%) in Q2 2020, right when the COVID-19 lockdowns started. It seems like attracting new subscribers has become a bit tougher, even though the market is still performing well. ARPU has been generally increasing, with a big spike of 9.3% year-over-year growth in Q2 2019.
+ -EMEA: EMEA initially showed strong performance, with both streaming revenue and membership experiencing substantial growth, peaking at 10.3% and 13.4% respectively, in Q1 2020. This aligns with the onset of the COVID-19 pandemic and suggests a significant impact from stay-at-home restrictions. The subsequent rise in ARPU, reaching a 4.6% year-over-year growth in Q1 2021, indicated successful monetization of these new subscribers. However, there was a notable decline in ARPU in Q4 2022 (-3.5%) that should spike some questions.
+ - LATM: LATM's performance was a mixed bag. Revenue growth was at its best in Q3 2019 (9.5%) but wasnt stable after that. Membership also peaked in Q1 2020 at 9.2%. ARPU had good growth too, highest in Q3 2019 (6%).
+ - APAC: APAC was the most interesting region, with big changes. Membership shot up a lot in Q1 2020 (22.2%), but the biggest revenue jump happened later, in Q1 2021 (11.4%). ARPU growth was there, but smaller and peaking at 4.2% in Q1 2021 alongside membership growth.
+![regional revenue](https://github.com/user-attachments/assets/a2dfaf90-f718-405a-a0ad-49a2fef52adb)
+
+   

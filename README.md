@@ -10,6 +10,7 @@ This project analyzes Netflix's streaming performance, focusing on revenue trend
   - [Data Cleaning](#data-cleaning)
   - [Exploratory Data Analysis](#exploratory_data_analysis)
   - [Data Analysis and Visualisation](#data_analysis_and_visualisation)
+  - [Results](#results)
 
 ### Project Goals:
 
@@ -108,12 +109,19 @@ While both revenue and membership experienced consistent growth, the pace of exp
 
 ### Content Performance Trend
 
-Content Release and Engagement: Netflix significantly increased content releases in the latter half of 2022, with Q3 and Q4 seeing the highest volume. Q3 2022 had 203 movie releases and 191 TV show releases, while Q4 2022 saw a further increase to 212 movie releases and a consistent 191 TV show releases. This surge in content availability appears to have contributed to a substantial increase in overall viewership, culminating in peak engagement in Q1 2024.
+ - Content Release and Engagement: Netflix significantly increased content releases in the latter half of 2022, with Q3 and Q4 seeing the highest volume. Q3 2022 had 203 movie releases and 191 TV show releases, while Q4 2022 saw a further increase to 212 movie releases and a consistent 191 TV show releases. This surge in content availability appears to have contributed to a substantial increase in overall viewership, culminating in peak engagement in Q1 2024.
 
-Peak Engagement (Q1 2024): Total views and hours viewed reached their highest levels in Q1 2024. Movies achieved 985 million views and 1.7 billion hours viewed, while TV shows garnered an impressive 1.03 billion views and 6 billion hours viewed. (What specific factors might explain this exceptional performance in Q1 2024? Were there specific popular releases, marketing campaigns, or external factors influencing viewership? Analyzing trends immediately following Q1 2024 will help understand if this surge was sustained.)
+ - Peak Engagement (Q1 2024): Total views and hours viewed reached their highest levels in Q1 2024. Movies achieved 985 million views and 1.7 billion hours viewed, while TV shows garnered an impressive 1.03 billion views and 6 billion hours viewed. (What specific factors might explain this exceptional performance in Q1 2024? Were there specific popular releases, marketing campaigns, or external factors influencing viewership? Analyzing trends immediately following Q1 2024 will help understand if this surge was sustained.)
+![total contnt release, total views, total hours viewed](https://github.com/user-attachments/assets/2d648de7-5483-4a89-8a35-771e65685c76)
 
-Average Views per Title: The average views per title also peaked in Q1 2024, with movies averaging 9.3 million views per title and TV shows averaging a remarkable 7.8 million views per title. Investigating the titles released during this period and their genres can provide valuable insights into content preferences.
 
-Runtime and Engagement: A scatter plot analysis reveals a positive correlation between average runtime and average hours viewed for both movies and TV shows. This suggests that, generally, longer content tends to accumulate more viewing hours. However, it's important to consider this trend in conjunction with the total views and average views per title. While longer runtimes might lead to higher total viewing hours, shorter, more easily consumable content might attract a broader audience and generate higher total views. Further analysis of specific genres and subgenres within movies and TV shows could help refine this understanding.
+- Average Views per Title: The average views per title also peaked in Q1 2024, with movies averaging 9.3 million views per title and TV shows averaging a remarkable 7.8 million views per title. Investigating the titles released during this period and their genres can provide valuable insights into content preferences.
 
-Top Performing Content: An analysis of the top 10 titles by hours viewed reveals a dominance of TV shows, with 5 of the top 5 spots occupied by series. Notably, "Bridgerton Season 3" leads with an impressive 734 million hours viewed and 91.9 million views, highlighting the popularity and binge-worthy nature of episodic content. Examining the characteristics of these top-performing titles (genre, themes, target audience) can offer valuable insights for Netflix's content strategy.
+ - Runtime and Engagement: A scatter plot analysis reveals a positive correlation between average runtime and average hours viewed for both movies and TV shows. This suggests that, generally, longer content tends to accumulate more viewing hours. However, it's important to consider this trend in conjunction with the total views and average views per title. While longer runtimes might lead to higher total viewing hours, shorter, more easily consumable content might attract a broader audience and generate higher total views. Further analysis of specific genres and subgenres within movies and TV shows could help refine this understanding.
+
+ - Top Performing Content: An analysis of the top 10 titles by hours viewed reveals a dominance of TV shows, with 5 of the top 5 spots occupied by series. Notably, "Bridgerton Season 3" leads with an impressive 734 million hours viewed and 91.9 million views, highlighting the popularity and binge-worthy nature of episodic content. Examining the characteristics of these top-performing titles (genre, themes, target audience) can offer valuable insights for Netflix's content strategy.
+![avg views, avg hours viewed](https://github.com/user-attachments/assets/fcd1c722-6699-4383-b7ab-bf2d2a54e225)
+
+
+
+   

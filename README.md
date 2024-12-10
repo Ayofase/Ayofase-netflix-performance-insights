@@ -42,7 +42,7 @@ Currency: US Dollars
 - Tableau
 
 ## Data Cleaning
-Data cleaning process with the use of Excel, [SQL](netflix_data_cleaning_and_quality_checks.sql?raw=true) and [R](netflix_revenue_engagement_R.R) to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
+Data cleaning process with the use of Excel, [SQL](netflix_data_cleaning_and_quality_checks.sql) and [R](netflix_revenue_engagement_R.R) to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**
    - Using Conditional Formatting in Microsoft Excel to highlight missing values. 9,836 missing release date data where found for both tv show and movies data with a total row number of 16,163

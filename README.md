@@ -42,12 +42,12 @@ Currency: US Dollars
 - Tableau
 
 ## Data Cleaning
-Data cleaning process with the use of Excel, SQL and R to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
+Data cleaning process with the use of Excel, [SQL](#netflix_data_cleaning_and_quality_checks.sql) and [R](netflix_revenue_engagement_R.R) to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**
    - Using Conditional Formatting in Microsoft Excel to highlight missing values. 9,836 missing release date data where found for both tv show and movies data with a total row number of 16,163
    - **TMDb API Integration:**
-Missing release dates for movies and tv shows were retrieved using the TMDb API (The Movie Database). A custom R function was implemented to perform this integration using the `httr` package for making API requests and the `jsonlite` package for parsing JSON responses from the TMDb API. If no matches were found for a title the corresponding release date field for that title was set to NA. 
+Missing release dates for movies and tv shows were retrieved using the TMDb API. [R](#netflix_tv_movie_tmdb.R) was implemented to perform this integration using the `httr` package for making API requests and the `jsonlite` package for parsing JSON responses from the TMDb API. If no matches were found for a title the corresponding release date field for that title was set to NA. 
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
    - Remove commas from numeric column (eg. Streaming_revenue and hours_viewed) in the revenue and engagement dataset for consistency

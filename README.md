@@ -12,6 +12,7 @@ This project analyzes Netflix's streaming performance, focusing on revenue trend
   - [Data Analysis and Visualisation](#data_analysis_and_visualisation)
   - [Results](#results)
   - [Recommendation](#recommendation)
+  - [Limitations](#limitations)
 
 ### Project Goals:
 
@@ -128,6 +129,11 @@ While both revenue and membership experienced consistent growth, the pace of exp
  6. Prioritize binge-worthy TV series: Invest in high-quality, long-form episodic content while optimizing runtime based on genre and audience.
  7. Replicate Q1 2024 success: Analyze the factors driving peak engagement and apply learnings to future content and marketing strategies.
  8. Diversify content offerings: Explore new genres, international productions, and niche content to expand audience reach and maximize engagement.
+
+## Limitations
+ - The Revenue data where grouped quarterly restricting analysis to quarterly and yearly observation. Categorising the engagement data into quarters encouraged a quarterly analysis to get insights on content engagement.
+ - Engagement data had no regional grouping to show regional content performance restricting analysis results to insights on the global market.
+ - During data cleaning process, 60% of the release_date column in the engagement data was found missing makeing the dataset unfit and bias for the analysis. Performing TMDb API integration with the use of R tool, was aimed at fetching missing release_date data from TMDb database and 85% mising data was found and NA was returned for those that wasnt. These NA, were replaced by values that will automatically be filtered ut of the dataset.
 
 
 

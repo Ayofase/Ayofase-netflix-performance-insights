@@ -42,7 +42,7 @@ Currency: US Dollars
 - R 
 - Tableau
 
-## Data Cleaning
+## Data Cleaning and exploration
 Data cleaning process with the use of Excel, [SQL](netflix_data_cleaning_and_quality_checks.sql) and [R](netflix_revenue_engagement_R.R) to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**
@@ -52,7 +52,6 @@ Missing release dates for movies and tv shows were retrieved using the TMDb API.
 #### 2. **Standardize Data Types**
    - Date column standardise to date format.
    - Remove commas from numeric column (eg. Streaming_revenue and hours_viewed) in the revenue and engagement dataset for consistency
-   - Standardise all column title to text.
    - Replace column name from CamelCase to snake_case.
 #### 3. **Remove Duplicates in the primary id column, date in revenue data and title in engagement data**
    - No duplicate fund in the primary id column.

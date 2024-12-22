@@ -74,8 +74,9 @@ Exploratory data analysis (EDA) conducted on the revenue and engagement data wit
 
 Initial exploration involving examination of the structure of revenue data and engagement data. Summary statistics (mean, median, min, max, quartiles) were calculated for key metrics, including:
 
-Revenue Data: streaming_revenue, members, arpu, streaming_revenue_growth_rate, membership_growth_rate, arpu_growth_rate (by region).
-Engagement Data: clean_title, hours_viewed, views, runtime_min.
+Revenue Data: streaming_revenue, members, arpu, streaming_revenue_growth_rate, membership_growth_rateand arpu_growth_rate (by region).
+
+Engagement Data: hours_viewed, views and runtime_min.
 
 Further exploration using Tableau to visualize data for potential insights
 

@@ -1,4 +1,4 @@
---Data importation from sql server
+# Data importation from sql server
 install.packages(c("DBI", "odbc")) # If not already installed
 library(DBI)
 library(odbc)
@@ -18,51 +18,51 @@ netflix_engagement_title <- dbReadTable(con, "netflix_combine_data")
 
 dbDisconnect(con)
 
---Initial data exploration and cleaning
+# Initial data exploration and cleaning
  
 head(netflix_revenue)
-head(netflix_engagement)                                   --Viewing the first few rows 
+head(netflix_engagement)                                   # Viewing the first few rows 
 head(netflix_engagement_title )
 
 
 tail(netflix_revenue)
-tail(netflix_engagement)                                  --Viewing the last few rows
+tail(netflix_engagement)                                  # Viewing the last few rows
 tail(netflix_engagement_title)
 
 dim(netflix_revenue)
-dim(netflix_engagement)                                   --Geting the dimensions (rows and columns)
+dim(netflix_engagement)                                   # Geting the dimensions (rows and columns)
 dim(netflix_engagement_title)
 
 
 str(netflix_revenue)
-str(netflix_engagement)                                                 --checking the structure (data types of each column)
+str(netflix_engagement)                                                 # checking the structure (data types of each column)
 str(netflix_engagement_title)
 
 
-netflix_engagement$years <- as.factor(netflix_engagement$years)           --convert year to factors data type
+netflix_engagement$years <- as.factor(netflix_engagement$years)           # convert year to factors data type
 
 summary(netflix_revenue)
-summary(netflix_engagement)                                             --Summary statistics (mean, median, quartiles, etc.)
+summary(netflix_engagement)                                             # Summary statistics (mean, median, quartiles, etc.)
 summary(netflix_engagement_title)
 
---Cleaning the tv show and movie title 
+# Cleaning the tv show and movie title 
 library(dplyr) 
 netflix_engagement_title <- netflix_engagement_title %>%
        mutate(title_clean = str_replace_all(title, "[^\\x00-\\x7F]+", "")) %>% 
        mutate(title_clean = str_replace_all(title_clean, "[[:punct:]]+", ""))
 
 
---Checking for missing values in each column
+# Checking for missing values in each column
 colSums(is.na(netflix_revenue))  
 colSums(is.na(netflix_engagement))
-colSums(is.na(netflix_engagement_title))                              --eight NA values found in the title column
+colSums(is.na(netflix_engagement_title))                              # eight NA values found in the title column
 
 ##Data transformation
 --Handling NA by remove rows where title_clean is NA
  netflix_engagement_title <- netflix_engagement_title %>%
       filter(!is.na(title_clean ))
  
---creating a column for quarters
+# creating a column for quarters
 library(lubridate) # For working with dates
 
 netflix_revenue$quarter <- paste0("Q", quarter(netflix_revenue$dates), " ", year(netflix_revenue$dates))
@@ -70,18 +70,18 @@ netflix_revenue$quarter <- paste0("Q", quarter(netflix_revenue$dates), " ", year
 netflix_revenue$quarter <- factor(netflix_revenue$quarter, levels = unique(netflix_revenue$quarter)) # Convert to an ordered factor
 
 
---Checking the newly created column
+# Checking the newly created column
 head(netflix_revenue)
 
---seperating the quarter column to have quarter_label different from year
+# seperating the quarter column to have quarter_label different from year
 library(tidyr)  
 netflix_revenue <- netflix_revenue %>%
   separate(quarter, into = c("quarter_label", "year"), sep = " ")
 
---checking newly created separated column
+# checking newly created separated column
 head(netflix_revenue)
 
---replacing the quarter values to Q1,Q2,Q3 and Q4.
+# replacing the quarter values to Q1,Q2,Q3 and Q4.
 netflix_engagement <- netflix_engagement %>%
   mutate(quarter = case_when(
     quarters == 1 ~ paste0("Q1 ", years),
@@ -94,7 +94,7 @@ netflix_engagement <- netflix_engagement %>%
 
 netflix_engagement$quarter <- factor(netflix_engagement$quarter, levels = unique(netflix_engagement$quarter)) # Convert to an ordered factor
 
---calculating avg view per title and average hours viewed per title
+# calculating avg view per title and average hours viewed per title
 
 netflix_engagement <- netflix_engagement %>%
   mutate(avg_views_per_title = total_views / no_content_type,
@@ -102,12 +102,12 @@ netflix_engagement <- netflix_engagement %>%
 
 
 library(bit64) 
---converting interger data type to BIGINT
+# converting interger data type to BIGINT
 netflix_revenue <- netflix_revenue %>%
   mutate(across(where(is.integer), as.numeric)) %>% # Convert standard integers
   mutate(across(where(~inherits(.x, "integer64")), as.numeric)) # Convert integer64 (from bit64)
 
---seperating and pioting longer the region to a new column
+# seperating and pioting longer the region to a new column
 netflix_revenue_long <- netflix_revenue %>%
   pivot_longer(cols = starts_with(c("ucan_", "emea_", "latm_", "apac_")),
                names_to = c("region", "metric"),
@@ -120,8 +120,8 @@ netflix_revenue_long<- netflix_revenue_long %>%
   rename(streaming_revenue = streaming) # New name = old name
 
 
---calculating variables
---Calculate growth rates (Make sure to sort by year and quarter before this step)
+# Calculating Variables
+# Calculate growth rates (Make sure to sort by year and quarter before this step)
 netflix_revenue_long <- netflix_revenue_long %>% 
   arrange(year, quarter_label) %>%
   group_by(region) %>%
@@ -130,17 +130,17 @@ netflix_revenue_long <- netflix_revenue_long %>%
          arpu_growth_rate = (arpu - lag(arpu)) / lag(arpu) * 100) %>%
   ungroup()
 
---change the growth rates column to percentage for visuals
+# change the growth rates column to percentage for visuals
 netflix_revenue_long <- netflix_revenue_long %>%
   mutate(streaming_revenue_growth_rate_formatted = sprintf("%.2f%%", streaming_revenue_growth_rate),
          membership_growth_rate_formatted = sprintf("%.2f%%", membership_growth_rate),
          arpu_growth_rate_formatted = sprintf("%.2f%%", arpu_growth_rate))
 
---Removing the "quarters" column
+# Removing the "quarters" column
 netflix_engagement <- netflix_engagement %>%
      select(-quarter, -years, -quarters)                        
 
---coverting quarters to factors to sort them correctly
+# coverting quarters to factors to sort them correctly
 netflix_engagement$quarter_label <- factor(netflix_engagement$quarter_label, levels = c("Q1", "Q2", "Q3", "Q4"))
 
 netflix_engagement <- netflix_engagement %>%

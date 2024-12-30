@@ -12,9 +12,10 @@ con <- DBI::dbConnect(odbc::odbc(),
 )
 
 
-netflix_revenue <- dbGetQuery(con, "SELECT * FROM cleaned_netflix_revenue_by_region")
-netflix_engagement <- dbGetQuery(con, "SELECT * FROM quarterly_netflix_engagement")  
-netflix_engagement_title <- dbGetQuery(con, "SELECT * FROM netflix_combine_data")
+netflix_revenue <- dbReadTable(con, "cleaned_netflix_revenue_by_region")
+netflix_engagement <- dbReadTable(con, "quarterly_netflix_engagement")
+netflix_engagement_title <- dbReadTable(con, "netflix_combine_data")
+
 dbDisconnect(con)
 
 --Initial data exploration and cleaning

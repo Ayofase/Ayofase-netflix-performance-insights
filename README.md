@@ -42,7 +42,7 @@ Currency: US Dollars
 - R 
 - Tableau
 
-## Data Cleaning and exploration
+## Data Cleaning and Preparation
 Data cleaning process with the use of Excel, [SQL](netflix_data_cleaning_and_quality_checks.sql) and [R](netflix_revenue_engagement_R.R) to critical ensure good data quality and consistency before analysis. Below are the steps used for cleaning and preparing the dataset
 
 #### 1. **Handling Missing Values**
